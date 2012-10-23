@@ -42,6 +42,7 @@ namespace XPlatUtils.Tests
 		{
 			var center = NSNotificationCenter.DefaultCenter;
 			var key = new NSString("TEST");
+			var obj = new NSObject();
 
 			for (int i = 0; i < count; i++) {
 				center.AddObserver(key, _ => {
@@ -50,7 +51,7 @@ namespace XPlatUtils.Tests
 			}
 
 			for (int i = 0; i < count; i++) {
-				center.PostNotificationName (key, new NSObject());
+				center.PostNotificationName (key, obj);
 			}
 		}
 	}

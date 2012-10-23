@@ -30,8 +30,7 @@ namespace XPlatUtils
 		/// <summary>
 		/// Register the specified service for a class with a default constructor
 		/// </summary>
-		public static void Register<T> ()
-            where T : new ()
+		public static void Register<T> () where T : new ()
 		{
 			services [typeof(T)] = new Lazy<object> (() => new T ());
 		}
