@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPlatUtils", "XPlatUtils\XPlatUtils.csproj", "{AEE9989A-0CCF-4C07-A67F-0D650ADF7C47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPlatUtils.Tests", "XPlatUtils.Tests\XPlatUtils.Tests.csproj", "{EE03A32B-2764-49EF-8F10-68235EAEFB0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEE9989A-0CCF-4C07-A67F-0D650ADF7C47}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{AEE9989A-0CCF-4C07-A67F-0D650ADF7C47}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{AEE9989A-0CCF-4C07-A67F-0D650ADF7C47}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{AEE9989A-0CCF-4C07-A67F-0D650ADF7C47}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{AEE9989A-0CCF-4C07-A67F-0D650ADF7C47}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{AEE9989A-0CCF-4C07-A67F-0D650ADF7C47}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{AEE9989A-0CCF-4C07-A67F-0D650ADF7C47}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{AEE9989A-0CCF-4C07-A67F-0D650ADF7C47}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{AEE9989A-0CCF-4C07-A67F-0D650ADF7C47}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{AEE9989A-0CCF-4C07-A67F-0D650ADF7C47}.Release|iPhone.Build.0 = Release|Any CPU
+		{AEE9989A-0CCF-4C07-A67F-0D650ADF7C47}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{AEE9989A-0CCF-4C07-A67F-0D650ADF7C47}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{EE03A32B-2764-49EF-8F10-68235EAEFB0C}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{EE03A32B-2764-49EF-8F10-68235EAEFB0C}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{EE03A32B-2764-49EF-8F10-68235EAEFB0C}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{EE03A32B-2764-49EF-8F10-68235EAEFB0C}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{EE03A32B-2764-49EF-8F10-68235EAEFB0C}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{EE03A32B-2764-49EF-8F10-68235EAEFB0C}.Debug|iPhone.Build.0 = Debug|iPhone
+		{EE03A32B-2764-49EF-8F10-68235EAEFB0C}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{EE03A32B-2764-49EF-8F10-68235EAEFB0C}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{EE03A32B-2764-49EF-8F10-68235EAEFB0C}.Release|iPhone.ActiveCfg = Release|iPhone
+		{EE03A32B-2764-49EF-8F10-68235EAEFB0C}.Release|iPhone.Build.0 = Release|iPhone
+		{EE03A32B-2764-49EF-8F10-68235EAEFB0C}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{EE03A32B-2764-49EF-8F10-68235EAEFB0C}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = XPlatUtils.Tests\XPlatUtils.Tests.csproj
+	EndGlobalSection
+EndGlobal
