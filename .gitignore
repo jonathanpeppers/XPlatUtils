@@ -5,3 +5,5 @@ obj
 # mstest test results
 TestResults
 *.userprefs
+
+.DS_Store
