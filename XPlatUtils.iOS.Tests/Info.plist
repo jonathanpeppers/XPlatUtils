@@ -22,5 +22,11 @@
 	</array>
 	<key>MinimumOSVersion</key>
 	<string>3.2</string>
+	<key>CFBundleDisplayName</key>
+	<string>XPlat Tests</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.jonathanpeppers.xplattests</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.0</string>
 </dict>
 </plist>

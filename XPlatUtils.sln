@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPlatUtils.Tests", "XPlatUtils.Tests\XPlatUtils.Tests.csproj", "{EE03A32B-2764-49EF-8F10-68235EAEFB0C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPlatUtils", "XPlatUtils\XPlatUtils.csproj", "{6B7E19CC-5657-4CE5-9DEE-788948D29D12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPlatUtils.iOS.Tests", "XPlatUtils.iOS.Tests\XPlatUtils.iOS.Tests.csproj", "{EE03A32B-2764-49EF-8F10-68235EAEFB0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +41,6 @@ Global
 		{EE03A32B-2764-49EF-8F10-68235EAEFB0C}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = XPlatUtils.Tests\XPlatUtils.Tests.csproj
+		StartupItem = XPlatUtils.iOS.Tests\XPlatUtils.iOS.Tests.csproj
 	EndGlobalSection
 EndGlobal

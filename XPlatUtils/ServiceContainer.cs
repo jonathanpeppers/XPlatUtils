@@ -55,5 +55,13 @@ namespace XPlatUtils
 				throw new KeyNotFoundException (string.Format ("Service not found for type '{0}'", typeof(T)));
 			}
 		}
+
+		/// <summary>
+		/// Mainly for testing, clears the entire container
+		/// </summary>
+		public static void Clear()
+		{
+			services.Clear();
+		}
 	}
 }
