@@ -14,7 +14,7 @@ namespace XPlatUtils.Tests {
         class TestMessage : Message {
             public TestMessage (object sender)
                 : base (sender)
-            {
+            {                           
 
             }
         }
@@ -67,6 +67,12 @@ namespace XPlatUtils.Tests {
         public void NullUnsubscribe ()
         {
             messenger.Unsubscribe<TestMessage> (null);
+        }
+
+        [Test, ExpectedException (typeof (ArgumentNullException))]
+        public void NullPublish ()
+        {
+            messenger.Publish<TestMessage> (null);
         }
     }
 }
