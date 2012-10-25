@@ -14,7 +14,7 @@ namespace XPlatUtils {
         public void Subscribe<TMessage> (Action<TMessage> deliveryAction) where TMessage : Message
         {
             if (deliveryAction == null) {
-                throw new ArgumentException ("deliveryAction is null");
+                throw new ArgumentNullException ("deliveryAction");
             }
 
             List<Delegate> list;
@@ -28,7 +28,7 @@ namespace XPlatUtils {
         public void Unsubscribe<TMessage> (Action<TMessage> deliveryAction) where TMessage : Message
         {
             if (deliveryAction == null) {
-                throw new ArgumentException ("deliveryAction is null");
+                throw new ArgumentNullException ("deliveryAction");
             }
 
             List<Delegate> list;
@@ -40,7 +40,7 @@ namespace XPlatUtils {
         public void Publish<TMessage> (TMessage message) where TMessage : Message
         {
             if (message == null) {
-                throw new ArgumentException ("message is null");
+                throw new ArgumentNullException ("message");
             }
 
             List<Delegate> list;

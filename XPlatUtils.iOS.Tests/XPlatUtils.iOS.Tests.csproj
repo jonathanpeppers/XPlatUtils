@@ -93,6 +93,12 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="MessengerSpeedTest.cs" />
+    <Compile Include="..\XPlatUtils.Tests\MessengerTests.cs">
+      <Link>MessengerTests.cs</Link>
+    </Compile>
+    <Compile Include="..\XPlatUtils.Tests\ServiceContainerTests.cs">
+      <Link>ServiceContainerTests.cs</Link>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

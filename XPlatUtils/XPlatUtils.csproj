@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>XPlatUtils</RootNamespace>
     <AssemblyName>XPlatUtils</AssemblyName>
-    <TargetFrameworkProfile>Profile36</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Profile1</TargetFrameworkProfile>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
   </PropertyGroup>
