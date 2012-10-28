@@ -5,7 +5,7 @@ namespace XPlatUtils
 	/// <summary>
 	/// Messenger hub responsible for taking subscriptions/publications and delivering of messages.
 	/// </summary>
-	public interface IMessengerHub
+	public interface IMessenger
 	{
 		/// <summary>
 		/// Subscribe to a message type with the given destination and delivery action.

@@ -8,7 +8,7 @@ namespace XPlatUtils {
     /// Messenger hub responsible for taking subscriptions/publications and delivering of messages.
     /// NOTE: uses WeakReferences, so forgetting to unsubscribe will not cause memory leaks
     /// </summary>
-    public sealed class MessengerHub : IMessengerHub {
+    public sealed class MessengerHub : IMessenger {
         Dictionary<Type, List<WeakReference>> messages = new Dictionary<Type, List<WeakReference>> ();
 
         /// <summary>

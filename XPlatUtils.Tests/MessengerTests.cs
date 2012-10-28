@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +7,7 @@ using NUnit.Framework;
 namespace XPlatUtils.Tests {
     [TestFixture]
     public class MessengerTests {
-        IMessengerHub messenger;
+        IMessenger messenger;
 
         #region TestClasses
 
