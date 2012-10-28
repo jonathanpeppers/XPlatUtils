@@ -61,7 +61,7 @@ Examples:
     class MyMessage : Message { public MyMessage(object sender) : base(sender) { } }
     
     //Now any class can register such as
-    var messenger = new MessengerHub();
+    var messenger = new Messenger();
     messenger.Subscribe<MyMessage>(m => {
         //Do something here
     });
@@ -70,7 +70,7 @@ Examples:
     messenger.Subscribe<MyMessage>(MyMethod);
 
     //For cleanliness, use in combination with ServiceContainer
-    var messenger = ServiceContainer.Resolve<IMessengerHub>();
+    var messenger = ServiceContainer.Resolve<IMessenger>();
 
     //To send a message
     messenger.Publish(new MyMessage(this));
