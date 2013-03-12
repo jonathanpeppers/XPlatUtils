@@ -34,8 +34,8 @@ Here are some examples of registration:
     MyInterface myInterface = ServiceContainer.Resolve<MyInterface>();
     
     //Also the same as
-    MyClass myClass = ServiceContainer.Resolve(typeof(MyClass));
-    MYInterface myInterface = ServiceContainer.Resolve(typeof(MyInterface));
+    MyClass myClass = ServiceContainer.Resolve(typeof(MyClass)) as MyClass;
+    MyInterface myInterface = ServiceContainer.Resolve(typeof(MyInterface)) as MyInterface;
 
 Other notes:
 * Double registrations will just overwrite the previous
