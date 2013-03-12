@@ -47,6 +47,7 @@ Some nice things you can do on each platform:
     * Register controllers created by XIBs or storyboard such as: `public MyController(IntPtr handle) : base(handle) { ServiceContainer.Register(this); }`
     * You can also hook up storyboard creation like this: `ServiceContainer.Register(() => (MyController)Storyboard.InstantiateViewController ("MyController"));`
 * Android
+    * Setup a custom `Android.App.Application` class and register everything in `OnCreate`
     * You can register activities in OnCreate, or even OnResume/OnPause if that makes more sense
 * WinRT/Windows Phone
     * Use it for binding View to ViewModel: `DataContext = ServiceContainer.Resolve<MyViewModel>()`
