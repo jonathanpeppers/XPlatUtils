@@ -31,7 +31,7 @@ Here are some examples of registration:
     
     //To retrieve an instance
     MyClass myClass = ServiceContainer.Resolve<MyClass>();
-    MYInterface myInterface = ServiceContainer.Resolve<MyInterface>();
+    MyInterface myInterface = ServiceContainer.Resolve<MyInterface>();
     
     //Also the same as
     MyClass myClass = ServiceContainer.Resolve(typeof(MyClass));
