@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPlatUtils.iOS.Tests", "XPl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPlatUtils.Tests", "XPlatUtils.Tests\XPlatUtils.Tests.csproj", "{128E2C57-75E7-4206-8DCF-774B3289F9AC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPlatUtils.iOS", "XPlatUtils.iOS\XPlatUtils.iOS.csproj", "{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
@@ -55,16 +57,16 @@ Global
 		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.Ad-Hoc|Any CPU.Build.0 = Release|Any CPU
 		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
 		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
-		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.Ad-Hoc|iPhoneSimulator.Build.0 = Release|Any CPU
+		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.Ad-Hoc|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.Ad-Hoc|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.Ad-Hoc|Mixed Platforms.Build.0 = Release|Any CPU
 		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
 		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.AppStore|Any CPU.Build.0 = Release|Any CPU
 		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.AppStore|iPhone.ActiveCfg = Release|Any CPU
 		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.AppStore|iPhone.Build.0 = Release|Any CPU
-		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.AppStore|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.AppStore|iPhoneSimulator.Build.0 = Release|Any CPU
+		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.AppStore|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.AppStore|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.AppStore|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.AppStore|Mixed Platforms.Build.0 = Release|Any CPU
 		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -83,6 +85,38 @@ Global
 		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{6B7E19CC-5657-4CE5-9DEE-788948D29D12}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Ad-Hoc|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Ad-Hoc|Any CPU.Build.0 = Release|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Ad-Hoc|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Ad-Hoc|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Ad-Hoc|Mixed Platforms.Build.0 = Release|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.AppStore|Any CPU.Build.0 = Release|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.AppStore|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.AppStore|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.AppStore|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.AppStore|Mixed Platforms.Build.0 = Release|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Release|iPhone.Build.0 = Release|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6FF24D10-2FE6-49C4-ABC0-E02455D358CE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{EE03A32B-2764-49EF-8F10-68235EAEFB0C}.Ad-Hoc|Any CPU.ActiveCfg = Ad-Hoc|iPhone
 		{EE03A32B-2764-49EF-8F10-68235EAEFB0C}.Ad-Hoc|Any CPU.Build.0 = Ad-Hoc|iPhone
 		{EE03A32B-2764-49EF-8F10-68235EAEFB0C}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
@@ -118,6 +152,16 @@ Global
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = XPlatUtils.iOS.Tests\XPlatUtils.iOS.Tests.csproj
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.TabsToSpaces = False
+		$1.inheritsSet = VisualStudio
+		$1.inheritsScope = text/plain
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
