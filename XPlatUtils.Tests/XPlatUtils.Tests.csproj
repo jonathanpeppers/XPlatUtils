@@ -46,12 +46,18 @@
     <Compile Include="MessengerTests.cs" />
     <Compile Include="ServiceContainerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\XPlatUtils\XPlatUtils.csproj">
-      <Project>{6B7E19CC-5657-4CE5-9DEE-788948D29D12}</Project>
-      <Name>XPlatUtils</Name>
-    </ProjectReference>
+    <Compile Include="..\XPlatUtils\IMessenger.cs">
+      <Link>XPlatUtils\IMessenger.cs</Link>
+    </Compile>
+    <Compile Include="..\XPlatUtils\Message.cs">
+      <Link>XPlatUtils\Message.cs</Link>
+    </Compile>
+    <Compile Include="..\XPlatUtils\Messenger.cs">
+      <Link>XPlatUtils\Messenger.cs</Link>
+    </Compile>
+    <Compile Include="..\XPlatUtils\ServiceContainer.cs">
+      <Link>XPlatUtils\ServiceContainer.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -64,4 +70,7 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <Folder Include="XPlatUtils\" />
+  </ItemGroup>
 </Project>
