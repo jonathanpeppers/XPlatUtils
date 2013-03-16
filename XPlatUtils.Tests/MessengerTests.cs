@@ -7,7 +7,7 @@ using NUnit.Framework;
 namespace XPlatUtils.Tests {
     [TestFixture]
     public class MessengerTests {
-        IMessenger messenger;
+        Messenger messenger;
 
         #region TestClasses
 
@@ -24,7 +24,7 @@ namespace XPlatUtils.Tests {
         [SetUp]
         public void SetUp ()
         {
-            messenger = new MessengerHub ();
+            messenger = new Messenger ();
         }
 
         [Test]

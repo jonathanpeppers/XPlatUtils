@@ -25,7 +25,7 @@ namespace XPlatUtils.Tests
 		[Test]
 		public void MessengerTest ()
 		{
-			var hub = new MessengerHub();
+			var hub = new Messenger();
 			for (int i = 0; i < count; i++) {
 				hub.Subscribe<TestMessage>(_ => {
 					//do nothing

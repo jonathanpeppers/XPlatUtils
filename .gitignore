@@ -1,6 +1,7 @@
 bin
 obj
 TestResults
+test-results
 *.userprefs
 .DS_Store
 *.user

@@ -8,7 +8,7 @@ namespace XPlatUtils {
     /// Messenger hub responsible for taking subscriptions/publications and delivering of messages.
     /// NOTE: uses WeakReferences, so forgetting to unsubscribe will not cause memory leaks
     /// </summary>
-    public sealed class MessengerHub : IMessenger {
+    public sealed class Messenger {
         Dictionary<Type, List<WeakReference>> messages = new Dictionary<Type, List<WeakReference>> ();
 
         /// <summary>
@@ -72,6 +72,31 @@ namespace XPlatUtils {
                     }
                 }
             }
+        }
+    }
+
+    /// <summary>
+    /// Base class for messages that provides weak refrence storage of the sender
+    /// </summary>
+    public abstract class Message {
+        /// <summary>
+        /// Gets the original sender of the message
+        /// </summary>
+        public object Sender {
+            get;
+            private set;
+        }
+        
+        /// <summary>
+        /// Initializes a new instance of the MessageBase class.
+        /// </summary>
+        /// <param name="sender">Message sender (usually "this")</param>
+        public Message (object sender)
+        {
+            if (sender == null)
+                throw new ArgumentNullException ("sender");
+            
+            Sender = sender;
         }
     }
 }
