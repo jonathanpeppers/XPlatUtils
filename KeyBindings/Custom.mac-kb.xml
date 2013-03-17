@@ -1,0 +1,39 @@
+﻿<schemes version="1.0">
+  <scheme name="current">
+    <binding command="MonoDevelop.Ide.Commands.ProjectCommands.Build" shortcut="" />
+    <binding command="MonoDevelop.Ide.Commands.ProjectCommands.BuildSolution" shortcut="F6" />
+    <binding command="MonoDevelop.Ide.Commands.ProjectCommands.Rebuild" shortcut="" />
+    <binding command="MonoDevelop.Ide.Commands.ProjectCommands.RebuildSolution" shortcut="Shift+Meta+F6" />
+    <binding command="MonoDevelop.Ide.Commands.ProjectCommands.Stop" shortcut="Shift+F5" />
+    <binding command="MonoDevelop.Debugger.DebugCommands.EnableDisableBreakpoint" shortcut="" />
+    <binding command="MonoDevelop.Debugger.DebugCommands.Pause" shortcut="" />
+    <binding command="MonoDevelop.Debugger.DebugCommands.StepInto" shortcut="Shift+F10" />
+    <binding command="MonoDevelop.Debugger.DebugCommands.StepOver" shortcut="F10" />
+    <binding command="MonoDevelop.Debugger.DebugCommands.StepOut" shortcut="" />
+    <binding command="MonoDevelop.Debugger.DebugCommands.ToggleBreakpoint" shortcut="F9" />
+    <binding command="MonoDevelop.Debugger.DebugCommands.Debug" shortcut="F5" />
+    <binding command="MonoDevelop.Ide.Commands.ProjectCommands.Run" shortcut="Control+F5" />
+    <binding command="MonoDevelop.Ide.Commands.EditCommands.IndentSelection" shortcut="" />
+    <binding command="MonoDevelop.Ide.Commands.EditCommands.ToggleCodeComment" shortcut="Meta+K|Meta+C" />
+    <binding command="MonoDevelop.Ide.Commands.EditCommands.UnIndentSelection" shortcut="" />
+    <binding command="MonoDevelop.Ide.Commands.SearchCommands.GotoLineNumber" shortcut="Meta+G" />
+    <binding command="MonoDevelop.Ide.Commands.TextEditorCommands.DeleteToLineEnd" shortcut="" />
+    <binding command="MonoDevelop.Ide.Commands.TextEditorCommands.DeleteLine" shortcut="Meta+L" />
+    <binding command="MonoDevelop.Ide.Commands.SearchCommands.FindNext" shortcut="F3" />
+    <binding command="MonoDevelop.Ide.Commands.SearchCommands.FindPrevious" shortcut="Shift+F3" />
+    <binding command="MonoDevelop.Components.MainToolbar.Commands.NavigateTo" shortcut="" />
+    <binding command="MonoDevelop.Ide.CodeFormatting.CodeFormattingCommands.FormatBuffer" shortcut="Shift+Meta+F" />
+    <binding command="MonoDevelop.Ide.Commands.SearchCommands.FindInFiles" shortcut="Meta+F" />
+    <binding command="MonoDevelop.Ide.Commands.TextEditorCommands.ToggleCompletionSuggestionMode" shortcut="" />
+    <binding command="MonoDevelop.Ide.Commands.TextEditorCommands.ShowCompletionWindow" shortcut="Meta+J" />
+    <binding command="MonoDevelop.Ide.Commands.TextEditorCommands.ShowParameterCompletionWindow" shortcut="" />
+    <binding command="MonoDevelop.Ide.Commands.NavigationCommands.NavigateBack" shortcut="Meta+-" />
+    <binding command="MonoDevelop.Ide.Commands.NavigationCommands.NavigateForward" shortcut="Shift+Meta+-" />
+    <binding command="MonoDevelop.Ide.Commands.ViewCommands.ZoomOut" shortcut="" />
+    <binding command="MonoDevelop.Ide.Commands.ViewCommands.ZoomIn" shortcut="" />
+    <binding command="MonoDevelop.Ide.Commands.EditCommands.Rename" shortcut="F2" />
+    <binding command="MonoDevelop.Ide.Commands.TextEditorCommands.DeletePrevSubword" shortcut="Meta+BackSpace" />
+    <binding command="MonoDevelop.Ide.Commands.TextEditorCommands.DeleteNextSubword" shortcut="Meta+Delete" />
+    <binding command="MonoDevelop.Refactoring.RefactoryCommands.ImportSymbol" shortcut="Meta+." />
+  </scheme>
+</schemes>
