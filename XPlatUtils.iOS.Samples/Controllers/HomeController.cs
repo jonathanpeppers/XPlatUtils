@@ -37,14 +37,14 @@ namespace XPlatUtils.iOS.Samples
 			var sample = viewModel.Samples [indexPath.Row];
 			var cell = tableView.DequeueReusableCell ("SampleCell");
 			cell.TextLabel.Text = sample.Name;
-			cell.TextLabel.Text = sample.ClassName;
+			cell.TextLabel.Text = sample.Color;
 			return cell;
 		}
 
 		[Export("tableView:didSelectRowAtIndexPath:")]
 		public void RowSelected (UITableView tableView, NSIndexPath indexPath)
 		{
-			Console.WriteLine ("WOOT!");
+			Console.WriteLine ("Row clicked at: " + indexPath.Description);
 		}
 	}
 }

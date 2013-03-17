@@ -1,0 +1,17 @@
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>C#</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>tableViewMoveRow</Shortcut>
+      <_Description />
+      <TemplateType>Unknown</TemplateType>
+    </Header>
+    <Code><![CDATA[[Export("tableView:moveRowAtIndexPath:toIndexPath:")]
+public void MoveRow (UITableView tableView, NSIndexPath sourceIndexPath, NSIndexPath destinationIndexPath)
+{
+	$end$
+}]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

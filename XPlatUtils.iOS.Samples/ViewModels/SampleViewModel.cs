@@ -9,7 +9,10 @@ namespace XPlatUtils.iOS.Samples
 		{
 			Samples = new List<Sample>
 			{
-				new Sample { Name = "UITableView Sample", Segue = "Sample1", ClassName = "UITableViewSource" },
+				new Sample { Name = "Apple", Color = "Red" },
+				new Sample { Name = "Banana", Color = "Yellow" },
+				new Sample { Name = "Carrot", Color = "Orange" },
+				new Sample { Name = "Cucumber", Color = "Green" },
 			};
 		}
 

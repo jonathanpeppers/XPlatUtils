@@ -1,0 +1,17 @@
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>C#</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>scrollViewWillEndDragging</Shortcut>
+      <_Description />
+      <TemplateType>Unknown</TemplateType>
+    </Header>
+    <Code><![CDATA[[Export("scrollViewWillEndDragging:withVelocity:targetContentOffset:")]
+public void WillEndDragging (UIScrollView scrollView, PointF velocity, PointF& targetContentOffset)
+{
+	$end$
+}]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

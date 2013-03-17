@@ -48,7 +48,6 @@ namespace XPlatUtils.CodeSnippets
 					var selectorProperty = exportType.GetProperty ("Selector");
 					string selector = selectorProperty.GetValue (export, null) as string;
 					string selectorName = selector.Replace (":", string.Empty);
-					string fileName = selectorName + ".template.xml";
 
 					StringBuilder code = new StringBuilder("[Export(\"");
 					code.Append (selector);
@@ -76,9 +75,20 @@ namespace XPlatUtils.CodeSnippets
 					code.AppendLine ("\t$end$");
 					code.Append ("}");
 
-					File.WriteAllText (Path.Combine (snippetDir, fileName), string.Format (SnippetFormat, selectorName, code));
+					string snippetName = selectorName;
+					if (snippetName.ToLower ().Contains ("tableview"))
+					{
+						snippetName = "tableView" + method.Name;
+					}
+					else if (snippetName.ToLower ().Contains ("scrollview"))
+					{
+						snippetName = "scrollView" + method.Name;
+					}
+					string fileName = snippetName + ".template.xml";
 
-					Console.WriteLine (selectorName);
+					File.WriteAllText (Path.Combine (snippetDir, fileName), string.Format (SnippetFormat, snippetName, code));
+
+					Console.WriteLine (snippetName);
 				}
 			}
 		}

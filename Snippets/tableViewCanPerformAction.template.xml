@@ -1,0 +1,17 @@
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>C#</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>tableViewCanPerformAction</Shortcut>
+      <_Description />
+      <TemplateType>Unknown</TemplateType>
+    </Header>
+    <Code><![CDATA[[Export("tableView:canPerformAction:forRowAtIndexPath:withSender:")]
+public Boolean CanPerformAction (UITableView tableView, Selector action, NSIndexPath indexPath, NSObject sender)
+{
+	$end$
+}]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

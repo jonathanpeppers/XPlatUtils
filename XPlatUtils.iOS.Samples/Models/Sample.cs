@@ -9,12 +9,7 @@ namespace XPlatUtils.iOS.Samples
 			set;
 		}
 
-		public string Segue {
-			get;
-			set;
-		}
-
-		public string ClassName {
+		public string Color {
 			get;
 			set;
 		}

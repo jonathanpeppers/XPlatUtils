@@ -1,0 +1,17 @@
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>C#</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>scrollViewScrolledToTop</Shortcut>
+      <_Description />
+      <TemplateType>Unknown</TemplateType>
+    </Header>
+    <Code><![CDATA[[Export("scrollViewDidScrollToTop:")]
+public void ScrolledToTop (UIScrollView scrollView)
+{
+	$end$
+}]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

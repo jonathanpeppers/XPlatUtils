@@ -1,0 +1,17 @@
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>C#</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>tableViewShouldHighlightRow</Shortcut>
+      <_Description />
+      <TemplateType>Unknown</TemplateType>
+    </Header>
+    <Code><![CDATA[[Export("tableView:shouldHighlightRowAtIndexPath:")]
+public Boolean ShouldHighlightRow (UITableView tableView, NSIndexPath rowIndexPath)
+{
+	$end$
+}]]></Code>
+  </CodeTemplate>
+</CodeTemplates>
