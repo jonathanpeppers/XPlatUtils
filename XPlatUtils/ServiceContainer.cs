@@ -111,11 +111,17 @@ namespace XPlatUtils
             }
         }
 
+        /// <summary>
+        /// Adds a "scope" which is a way to register a service on a stack to be popped off at a later time
+        /// </summary>
         public static void AddScope()
         {
             scopedServices.Push(new Dictionary<Type, object>());
         }
 
+        /// <summary>
+        /// Removes the current "scope" which pops off some local services
+        /// </summary>
         public static void RemoveScope()
         {
             if (scopedServices.Count > 0)
