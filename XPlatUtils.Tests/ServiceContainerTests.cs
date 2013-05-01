@@ -126,5 +126,35 @@ namespace XPlatUtils.Tests {
 
             ServiceContainer.Resolve<InterfaceA> ();
         }
+
+        [Test]
+        public void RegisterScopedResolves()
+        {
+            ClassA obj1 = new ClassA();
+
+            ServiceContainer.RegisterScoped(obj1);
+
+            var actual = ServiceContainer.Resolve<ClassA>();
+            Assert.That(actual, Is.EqualTo(obj1));
+        }
+
+        [Test]
+        public void AddScopeResolves()
+        {
+            ClassA obj1 = new ClassA();
+            ClassA obj2 = new ClassA();
+
+            ServiceContainer.RegisterScoped(obj1);
+            ServiceContainer.AddScope();
+            ServiceContainer.RegisterScoped(obj2);
+
+            var actual = ServiceContainer.Resolve<ClassA>();
+            Assert.That(actual, Is.EqualTo(obj2));
+
+            ServiceContainer.RemoveScope();
+
+            actual = ServiceContainer.Resolve<ClassA>();
+            Assert.That(actual, Is.EqualTo(obj1));
+        }
     }
 }
