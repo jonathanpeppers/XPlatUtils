@@ -4,75 +4,78 @@ using System.Linq;
 using System.Text;
 using NUnit.Framework;
 
-namespace XPlatUtils.Tests {
-    [TestFixture]
-    public class MessengerTests {
-        Messenger messenger;
+namespace XPlatUtils.Tests
+{
+	[TestFixture]
+	public class MessengerTests
+	{
+		Messenger messenger;
 
         #region TestClasses
 
-        class TestMessage : Message {
-            public TestMessage (object sender)
+		class TestMessage : Message
+		{
+			public TestMessage (object sender)
                 : base (sender)
-            {                           
+			{                           
 
-            }
-        }
+			}
+		}
 
         #endregion
 
-        [SetUp]
-        public void SetUp ()
-        {
-            messenger = new Messenger ();
-        }
+		[SetUp]
+		public void SetUp ()
+		{
+			messenger = new Messenger ();
+		}
 
-        [Test]
-        public void SubscribeAndPublish ()
-        {
-            var message = new TestMessage (this);
+		[Test]
+		public void SubscribeAndPublish ()
+		{
+			var message = new TestMessage (this);
 
-            messenger.Subscribe<TestMessage> (m => {
+			messenger.Subscribe<TestMessage> (m => {
 
-                Assert.That (m, Is.EqualTo (message));
-                Assert.That (m.Sender, Is.EqualTo (this));
-            });
+				Assert.That (m, Is.EqualTo (message));
+				Assert.That (m.Sender, Is.EqualTo (this));
+			});
 
-            messenger.Publish (message);
-        }
+			messenger.Publish (message);
+		}
 
-        [Test]
-        public void Unsubscribe ()
-        {
-            Action<TestMessage> action = _ => Assert.That (false, "This event should not fire!");
+		[Test]
+		public void Unsubscribe ()
+		{
+			Action<TestMessage> action = _ => Assert.That (false, "This event should not fire!");
 
-            messenger.Subscribe (action);
-            messenger.Unsubscribe (action);
-            messenger.Publish (new TestMessage (this));
-        }
+			messenger.Subscribe (action);
+			messenger.Unsubscribe (action);
+			messenger.Publish (new TestMessage (this));
+		}
 
-        [Test, ExpectedException(typeof(ArgumentNullException))]
-        public void NullSender ()
-        {
-            new TestMessage (null);
-        }
+		[Test, ExpectedException(typeof(ArgumentNullException))]
+		public void NullSender ()
+		{
+			new TestMessage (null);
+		}
 
-        [Test, ExpectedException (typeof (ArgumentNullException))]
-        public void NullSubscribe ()
-        {
-            messenger.Subscribe<TestMessage> (null);
-        }
+		[Test, ExpectedException (typeof (ArgumentNullException))]
+		public void NullSubscribe ()
+		{
+			messenger.Subscribe<TestMessage> (null);
+		}
 
-        [Test, ExpectedException (typeof (ArgumentNullException))]
-        public void NullUnsubscribe ()
-        {
-            messenger.Unsubscribe<TestMessage> (null);
-        }
+		[Test, ExpectedException (typeof (ArgumentNullException))]
+		public void NullUnsubscribe ()
+		{
+			messenger.Unsubscribe<TestMessage> (null);
+		}
 
-        [Test, ExpectedException (typeof (ArgumentNullException))]
-        public void NullPublish ()
-        {
-            messenger.Publish<TestMessage> (null);
-        }
-    }
+		[Test, ExpectedException (typeof (ArgumentNullException))]
+		public void NullPublish ()
+		{
+			messenger.Publish<TestMessage> (null);
+		}
+	}
 }
