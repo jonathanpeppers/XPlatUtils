@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPlatUtils", "XPlatUtils\XPlatUtils.csproj", "{6B7E19CC-5657-4CE5-9DEE-788948D29D12}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{0360A826-A9B8-485F-8830-42B1A281F435}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPlatUtils.iOS.Samples", "XPlatUtils.iOS.Samples\XPlatUtils.iOS.Samples.csproj", "{F8E72676-385C-4776-9E07-0D8FBD8A13B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{927AF680-F5FF-44D1-8F70-D1262C9D9B43}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPlatUtils.iOS.Tests", "XPlatUtils.iOS.Tests\XPlatUtils.iOS.Tests.csproj", "{EE03A32B-2764-49EF-8F10-68235EAEFB0C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPlatUtils.Tests", "XPlatUtils.Tests\XPlatUtils.Tests.csproj", "{128E2C57-75E7-4206-8DCF-774B3289F9AC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{0360A826-A9B8-485F-8830-42B1A281F435}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPlatUtils.iOS.Samples", "XPlatUtils.iOS.Samples\XPlatUtils.iOS.Samples.csproj", "{F8E72676-385C-4776-9E07-0D8FBD8A13B2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{35B7D82E-37BB-4F5E-AF0E-908C6A33A560}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPlatUtils.CodeSnippets", "XPlatUtils.CodeSnippets\XPlatUtils.CodeSnippets.csproj", "{54CEAF0B-AF02-48A5-8726-41D63B0BE7AD}"
 EndProject
@@ -188,6 +192,9 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F8E72676-385C-4776-9E07-0D8FBD8A13B2} = {0360A826-A9B8-485F-8830-42B1A281F435}
+		{EE03A32B-2764-49EF-8F10-68235EAEFB0C} = {927AF680-F5FF-44D1-8F70-D1262C9D9B43}
+		{128E2C57-75E7-4206-8DCF-774B3289F9AC} = {927AF680-F5FF-44D1-8F70-D1262C9D9B43}
+		{54CEAF0B-AF02-48A5-8726-41D63B0BE7AD} = {35B7D82E-37BB-4F5E-AF0E-908C6A33A560}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = XPlatUtils.iOS.Samples\XPlatUtils.iOS.Samples.csproj

@@ -4,12 +4,14 @@ namespace XPlatUtils.iOS.Samples
 {
 	public class Sample
 	{
-		public string Name {
+		public string Name 
+		{
 			get;
 			set;
 		}
 
-		public string Color {
+		public string Color 
+		{
 			get;
 			set;
 		}

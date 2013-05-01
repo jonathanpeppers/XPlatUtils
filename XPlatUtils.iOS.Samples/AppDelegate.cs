@@ -14,7 +14,8 @@ namespace XPlatUtils.iOS.Samples
 			UIApplication.Main (args, null, "AppDelegate");
 		}
 		
-		public override UIWindow Window {
+		public override UIWindow Window 
+		{
 			get;
 			set;
 		}

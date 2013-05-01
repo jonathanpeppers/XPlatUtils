@@ -16,7 +16,8 @@ namespace XPlatUtils.iOS.Samples
 			};
 		}
 
-		public IList<Sample> Samples {
+		public IList<Sample> Samples 
+		{
 			get;
 			private set; 
 		}
