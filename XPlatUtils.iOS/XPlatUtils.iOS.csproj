@@ -40,5 +40,6 @@
   <ItemGroup>
     <Compile Include="Gif.cs" />
     <Compile Include="UIKitExtensions.cs" />
+    <Compile Include="PurchaseService.cs" />
   </ItemGroup>
 </Project>

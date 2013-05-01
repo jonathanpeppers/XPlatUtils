@@ -13,7 +13,7 @@ namespace XPlatUtils.Tests
 
         #region TestClasses
 
-		class TestMessage : Message
+		private class TestMessage : Message
 		{
 			public TestMessage (object sender)
                 : base (sender)
@@ -35,8 +35,8 @@ namespace XPlatUtils.Tests
 		{
 			var message = new TestMessage (this);
 
-			messenger.Subscribe<TestMessage> (m => {
-
+			messenger.Subscribe<TestMessage> (m => 
+			{
 				Assert.That (m, Is.EqualTo (message));
 				Assert.That (m.Sender, Is.EqualTo (this));
 			});
