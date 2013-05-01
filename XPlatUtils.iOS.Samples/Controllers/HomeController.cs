@@ -13,7 +13,7 @@ namespace XPlatUtils.iOS.Samples
 		{
 			viewModel = ServiceContainer.Resolve<SampleViewModel>();
 
-			Title = "Samples";
+			Title = "XPlatUtils Samples";
 		}
 
 		public override void ViewDidLoad ()
@@ -37,7 +37,24 @@ namespace XPlatUtils.iOS.Samples
 			var sample = viewModel.Samples [indexPath.Row];
 			var cell = tableView.DequeueReusableCell ("SampleCell");
 			cell.TextLabel.Text = sample.Name;
-			cell.TextLabel.Text = sample.Color;
+			cell.DetailTextLabel.Text = "Click me";
+			switch (sample.Color) 
+			{
+				case "Red":
+					cell.TextLabel.TextColor = UIColor.Red;
+					break;
+				case "Yellow":
+					cell.TextLabel.TextColor = UIColor.Yellow;
+					break;
+				case "Orange":
+					cell.TextLabel.TextColor = UIColor.Orange;
+					break;
+				case "Green":
+					cell.TextLabel.TextColor = UIColor.Green;
+					break;
+				default:
+					break;
+			}
 			return cell;
 		}
 

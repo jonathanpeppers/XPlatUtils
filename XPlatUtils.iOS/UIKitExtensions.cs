@@ -66,7 +66,6 @@ namespace XPlatUtils
             return controller.IsViewLoaded && controller.View.Window != null;
         }
 
-
         /// <summary>
         /// Creates a 1x1 image that is a certain color
         /// </summary>

@@ -9,7 +9,7 @@ namespace XPlatUtils.iOS.Samples
 		{
 			Samples = new List<Sample>
 			{
-				new Sample { Name = "Apple", Color = "Red" },
+				new Sample { Name = "Gif Sample", Color = "Red" },
 				new Sample { Name = "Banana", Color = "Yellow" },
 				new Sample { Name = "Carrot", Color = "Orange" },
 				new Sample { Name = "Cucumber", Color = "Green" },
